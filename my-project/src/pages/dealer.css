@@ -1,0 +1,60 @@
+.dealer-star {
+  padding-right: 50px;
+}
+.dealer-star h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.dealer-header img {
+  padding-right: 150px;
+}
+.dealer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 5rem 10rem;
+  margin-bottom: 100px;
+}
+.dealer-container img {
+  display: none;
+}
+.card-grid-container {
+  display: grid;
+  padding: 0 50px;
+  gap: 10px;
+}
+.card-grid-container {
+    display: grid;
+    justify-content: center; /* Center the cards horizontally */
+    padding: 0 50px;
+    gap: 10px;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .card-grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
+      padding: 0 100px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .card-grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+      margin: auto; /* Center the container horizontally */
+    }
+  }
+  
+  @media screen and (min-width: 1350px) {
+    .card-grid-container {
+      padding: 0 100px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+  }

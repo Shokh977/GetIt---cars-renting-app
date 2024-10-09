@@ -1,0 +1,19 @@
+.event-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.event-content {
+  max-width: 940px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.event-box {
+  width: 274px;
+  height: 262px;
+  background-color: #000;
+}

@@ -1,0 +1,51 @@
+.embla {
+  max-width: 1124px;
+  width: 100%;
+  --slide-size: 100%;
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  gap: 2rem;
+}
+.embla__slide{
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.carousel-btn {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 65px;
+  height: 60px; /* Adjust button height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  cursor: pointer;
+  z-index: 1; /* Ensure buttons are above content */
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .prev {
+        left: 70px;
+      }
+      
+      .next {
+        right: 70px;
+      }
+}
